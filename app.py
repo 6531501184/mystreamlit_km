@@ -14,14 +14,14 @@ with open('kmeans_model.pkl', 'rb') as f:
     loaded_model = pickle.load(f)
 
 # Set the page config
-st.set_page_config(page_title="K-Means Clustering App", layout="centered")
+st.set_page_config(page_title="k-Means Clustering App", layout="centered")
 
 # Set title
-st.title("K-Means Clustering Visualizer")
+st.title("🔍 k-Means Clustering Visualizer")
 
 # Display cluster centers
-st.subheader("🔍 Example Data for Visualization")
-st.markdown("This demo uses example data (20) to illustrate clustering results.")
+st.subheader("Example Data for Visualization")
+st.markdown("This demo uses example data (2D) to illustrate clustering results.")
 
 # Load from a saved dataset or generate synthetic data
 from sklearn.datasets import make_blobs
